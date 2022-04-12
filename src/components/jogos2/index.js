@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Image, Text, TouchableOpacity, StyleSheet} from "react-native";
 
-export default function Jogos({ titulo, valor, imagem }) {
+export default function Jogos2({ titulo, valor, imagem }) {
     return (
         <TouchableOpacity style={estilo.containerJogos}>
             <Image
@@ -17,33 +17,36 @@ export default function Jogos({ titulo, valor, imagem }) {
 
 const estilo = StyleSheet.create({
     containerJogos: {
-        backgroundColor: '#EAEAEA',
+        backgroundColor: 'white',
         borderRadius: 10,
         marginTop: 8,
-        padding: 10,
+        padding: 8,
         margin: 2,
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: 100,
-        height: 150,
+        width: 300,
+        height: 215,
         marginLeft: 8,
-        marginBottom: 5,
     },
     titulo: {
         color:'black',
-        fontSize: 12,
+        fontSize: 14,
         fontWeight:'bold',
+        marginLeft: -200,
+        marginTop: 10,
+        
     },
     valor: {
         color:'green',
         fontSize: 12,
-        marginLeft: 29,
-        marginTop: 2,
+        marginLeft: 200,
+        marginBottom: 100,
         fontWeight:'bold',
     },
     images: {
         width: '100%',
-        height: 75,
-        borderRadius: 3,
+        height: 150,
+        borderRadius: 10,
+        
     },
 });
